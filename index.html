@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Charlie Locep — Video Editor</title>
+<meta name="description" content="Portfolio of Charlie Locep, a video editor. Short-form and long-form edits, tools, workspace and contact.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#home">Skip to content</a>
+<header class="nav" id="nav">
+  <div class="nav-in">
+    <a class="logo" href="#home" data-cfg="name">Charlie Locep</a>
+    <button class="burger" id="burger" aria-expanded="false" aria-controls="menu" aria-label="Open menu"><span></span><span></span><span></span></button>
+    <nav id="menu" class="menu" aria-label="Main">
+      <a href="#home">Home</a><a href="#portfolio">Portfolio</a><a href="#software">Software</a><a href="#workspace">Workspace</a><a href="#contact">Contact</a>
+      <a class="btn btn-sm" href="#contact">Let's Work Together</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-text">
+      <p class="label" id="h-label"></p>
+      <h1 id="h-title"></h1>
+      <span class="rule"></span>
+      <p class="lead" id="h-text"></p>
+      <div class="btns"><a class="btn" href="#portfolio">View My Work</a><a class="btn btn-ghost" href="#contact">Let's Collaborate</a></div>
+    </div>
+    <div class="hero-vis" aria-hidden="false">
+      <div class="frame main" id="h-main"></div>
+      <div class="tl" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    </div>
+  </div>
+</section>
+
+<section id="portfolio" class="sec">
+  <div class="wrap">
+    <h2>Short-Form Edits</h2>
+    <p class="sub"></p>
+    <div class="grid9" id="short"></div>
+  </div>
+  <div class="wrap gap-lg">
+    <h2>Long-Form Editing</h2>
+    <p class="sub"></p>
+    <div class="long" id="long"></div>
+  </div>
+  <div class="wrap gap-lg">
+    <h2>A Channel I've Worked With</h2>
+    <p class="sub">Explore a YouTube channel I've contributed to through video editing.</p>
+    <div id="yt"></div>
+  </div>
+</section>
+
+<section id="software" class="sec alt">
+  <div class="wrap">
+    <h2>Tools Behind the Edits</h2>
+    <p class="sub">Software that supports my creative workflow.</p>
+    <div class="grid3" id="tools"></div>
+  </div>
+</section>
+
+<section id="workspace" class="sec">
+  <div class="wrap">
+    <h2>My Editing Workspace</h2>
+    <p class="sub"></p>
+    <div class="ws">
+      <div id="ws-img"></div>
+      <div><p class="lead" id="ws-text"></p><div class="feat" id="ws-feat"></div></div>
+    </div>
+  </div>
+  <div class="wrap gap-lg">
+    <h2>Behind the Timeline</h2>
+    <p class="sub">Every cut, transition, sound effect, and adjustment contributes to the final result.</p>
+    <figure class="tlfig" id="tlfig"></figure>
+  </div>
+</section>
+
+<section id="contact" class="sec contact">
+  <div class="wrap">
+    <h2>Let's Create Something Great.</h2>
+    <p class="sub">Have a project in mind? Let's talk about your ideas and turn them into engaging videos.</p>
+    <div class="grid3" id="cards"></div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <div><strong>Charlie Locep</strong><br><span class="muted">Video Editor</span><p class="tag">Every frame has a purpose.</p></div>
+    <nav aria-label="Footer"><a href="#home">Home</a><a href="#portfolio">Portfolio</a><a href="#software">Software</a><a href="#workspace">Workspace</a><a href="#contact">Contact</a></nav>
+    <div id="foot-links" class="foot-links"></div>
+  </div>
+  <p class="copy wrap">© <span id="year"></span> Charlie Locep. All rights reserved.</p>
+</footer>
+
+<dialog id="vd" class="dlg" aria-label="Video player">
+  <button class="x" data-close aria-label="Close video">✕</button>
+  <video id="vd-v" controls playsinline preload="none"></video>
+  <iframe id="vd-f" title="Video player" allow="autoplay; fullscreen" allowfullscreen hidden></iframe>
+  <p id="vd-err" class="err" hidden></p>
+</dialog>
+<dialog id="lb" class="dlg lb" aria-label="Image viewer">
+  <button class="x" data-close aria-label="Close image">✕</button>
+  <img id="lb-i" alt="">
+</dialog>
+<script src="script.js"></script>
+</body>
+</html>
